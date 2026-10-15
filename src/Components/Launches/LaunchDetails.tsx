@@ -1,5 +1,5 @@
 import React from "react";
-import { LaunchDetailsProps } from "../types";
+import { LaunchDetailsProps } from "../../types";
 
 
 

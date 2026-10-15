@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
 import './App.css'
 
-import Launches from './Components/Launches'
+import Launches from './Components/Launches/Launches'
 
 const App = () : React.JSX.Element => {
 

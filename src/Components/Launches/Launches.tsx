@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { GET_LAUNCHES, LAUNCHES_QUERY } from "../services/graphql-querys";
+import { GET_LAUNCHES, LAUNCHES_QUERY } from "../../services/graphql-querys";
 import { useLazyQuery, useQuery } from "@apollo/client";
 
-import { LaunchDetails as LaunchDetailsType } from "../types";
+import { LaunchDetails as LaunchDetailsType } from "../../types";
 
 import LaunchDetails from "./LaunchDetails";
 
@@ -35,7 +35,7 @@ const Launches = () : React.JSX.Element => {
     return (
         <>
             <h1>SpaceX last launches</h1>
-            {(loading || loadingDetails) 
+            {(loading || loadingDetails)
                 ? <p>Loading...</p>
                 : (
                     <div>
@@ -56,7 +56,7 @@ const Launches = () : React.JSX.Element => {
                         }
                     </div>
                 )}
-        </>  
+        </>
     );
 };
 

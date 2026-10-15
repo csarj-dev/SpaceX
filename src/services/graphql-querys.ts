@@ -1,15 +1,15 @@
 import { gql } from "@apollo/client";
 
 export const GET_LAUNCHES = gql`
-  query GetLaunches {
-    launchesPast(limit: 5) {
-        id
-        launch_date_local
-        launch_success
-        launch_year
-        mission_name
+    query GetLaunches {
+        launchesPast(limit: 5) {
+            id
+            launch_date_local
+            launch_success
+            launch_year
+            mission_name
+        }
     }
-  }
 `;
 
 export const LAUNCHES_QUERY = gql`
